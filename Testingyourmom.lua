@@ -102,7 +102,6 @@ end
 
 -- Main block that executes the optimizations if EzFrameRate is true
 if FrameRateBoost then
-    game.Players.LocalPlayer.PlayerScripts.Water.CFrame.Disabled = true
     game:GetService("Lighting"):ClearAllChildren()
     TextureLow()
     WaterRemove()
