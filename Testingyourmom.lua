@@ -1,3 +1,7 @@
+UserSettings():GetService("UserGameSettings").MasterVolume = 0
+settings().Rendering.QualityLevel = "1"
+game:GetService("StarterGui"):SetCoreGuiEnabled(Enum.CoreGuiType.Chat,false)
+
 -- Variable to enable frame rate optimization features
 FrameRateBoost = true
 
@@ -98,7 +102,7 @@ end
 
 -- Main block that executes the optimizations if EzFrameRate is true
 if FrameRateBoost then
-    game.Players.LocalPlayer.PlayerScripts.WaterCFrame.Disabled = true
+    game.Players.LocalPlayer.PlayerScripts.Water.CFrame.Disabled = true
     game:GetService("Lighting"):ClearAllChildren()
     TextureLow()
     WaterRemove()
