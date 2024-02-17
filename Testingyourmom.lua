@@ -1,3 +1,5 @@
+task.wait(5)
+
 UserSettings():GetService("UserGameSettings").MasterVolume = 0
 settings().Rendering.QualityLevel = "1"
 game:GetService("StarterGui"):SetCoreGuiEnabled(Enum.CoreGuiType.Chat,false)
